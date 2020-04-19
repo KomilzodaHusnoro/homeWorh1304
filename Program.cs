@@ -9,7 +9,7 @@ namespace msql
         static void Main(string[] args)
         {
          PersonDB editor = new PersonDB();
-         editor.CheckingConnection();
+         //  editor.CheckingConnection();
          editor.OpenConnecting();
          start:
          System.Console.WriteLine("Push *1* --> to add information \nPush *2* --> to see db \nPush *3* --> to select by ID\nPush *4* --> to update ID\nPush *5* --> to delete ID \nYour choise:");
@@ -29,15 +29,15 @@ namespace msql
                               firstName,
                               middleName,
                               dateOfBirth);
-             break;
+             goto start;
              case 2:
                 editor.Selection();
-             break;
+            goto start;
              case 3:
              System.Console.WriteLine("Enter ID: ");
              int idselect = int.Parse(Console.ReadLine());
              editor.SelectionById(idselect);
-             break;
+             goto start;
              case 4:
              System.Console.WriteLine("Enter ID yoy want to update: ");
              int inputId = int.Parse(Console.ReadLine());
@@ -50,7 +50,7 @@ namespace msql
              System.Console.WriteLine("Enter new date of birth: ");
              string dateOfBirth2 = Console.ReadLine();
              editor.UpdateById(inputId, lastName2, firstName2, middleName2, dateOfBirth2);
-             break;
+             goto start;
              case 5:
                 System.Console.WriteLine("Enter ID you want to delete: ");
                 int deleteId = int.Parse(Console.ReadLine());
