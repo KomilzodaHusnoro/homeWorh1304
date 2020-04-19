@@ -8,13 +8,10 @@ namespace msql
     {
         static void Main(string[] args)
         {
-            const string conString = @"Data Source= localhost; Initial Catalog= phones; user id=sa; password=Root123.";
-            SqlConnection con = new SqlConnection(conString);
-            con.Open();
-            if (con.State == ConnectionState.Open)
-            {
-                System.Console.WriteLine("Connected!");
-            }
+         PersonDB editor = new PersonDB();
+         editor.CheckingConnection();
+         editor.OpenConnecting();
+         editor.CloseConnecting();
         }
 
     }
