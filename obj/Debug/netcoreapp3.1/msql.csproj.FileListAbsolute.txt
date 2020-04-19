@@ -11,3 +11,10 @@ C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.
 C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.dll
 C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.pdb
 C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.genruntimeconfig.cache
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.csproj.CopyComplete
