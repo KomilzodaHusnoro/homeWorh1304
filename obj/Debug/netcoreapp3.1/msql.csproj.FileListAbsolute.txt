@@ -1,0 +1,13 @@
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\msql.exe
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\msql.deps.json
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\msql.runtimeconfig.json
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\msql.runtimeconfig.dev.json
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\msql.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\bin\Debug\netcoreapp3.1\msql.pdb
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.AssemblyInfo.cs
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.dll
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.pdb
+C:\Users\HP\Desktop\projects\new lessons\1404\msql\obj\Debug\netcoreapp3.1\msql.genruntimeconfig.cache
