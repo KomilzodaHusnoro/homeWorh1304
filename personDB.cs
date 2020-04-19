@@ -49,6 +49,17 @@ namespace msql
                 System.Console.WriteLine("Insert command successfull!!!");
             }
         }
+        public void SelectionById(int idselect)
+        {
+            string SelectionByIdCommand = string.Format($"select * from Person where Id = {idselect}");
+            SqlCommand command = new SqlCommand(SelectionByIdCommand,con);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                System.Console.WriteLine($"ID:{reader.GetValue(0)}\nLast Name:{reader.GetValue(1)}\nFirst Name:{reader.GetValue(2)}\nMiddle Name:{reader.GetValue(3)}");
+            } 
+
+        }
 
     }
 }

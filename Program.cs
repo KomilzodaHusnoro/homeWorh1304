@@ -11,7 +11,7 @@ namespace msql
          PersonDB editor = new PersonDB();
          editor.CheckingConnection();
          editor.OpenConnecting();
-         System.Console.WriteLine("Push *1* --> to add information \nPush *2* --> to see db \n Your choise:");
+         System.Console.WriteLine("Push *1* --> to add information \nPush *2* --> to see db \nPush *3* --> to select by ID\nYour choise:");
          int choise = int.Parse(Console.ReadLine());
          switch (choise)
          {
@@ -31,6 +31,11 @@ namespace msql
              break;
              case 2:
                 editor.Selection();
+             break;
+             case 3:
+             System.Console.WriteLine("Enter ID: ");
+             int idselect = int.Parse(Console.ReadLine());
+             editor.SelectionById(idselect);
              break;
          }
          editor.CloseConnecting();
