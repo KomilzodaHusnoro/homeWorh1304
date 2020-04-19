@@ -11,6 +11,7 @@ namespace msql
          PersonDB editor = new PersonDB();
          editor.CheckingConnection();
          editor.OpenConnecting();
+         editor.Selection();
          editor.CloseConnecting();
         }
 

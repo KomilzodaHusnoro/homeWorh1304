@@ -28,5 +28,17 @@ namespace msql
             con.Close();
             System.Console.WriteLine("db is closed!");
         }
+        public void Selection()
+        {
+            string commandText = "Select * from Person";
+            SqlCommand command = new SqlCommand(commandText, con);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                System.Console.WriteLine($"ID:{reader.GetValue(0)}, FirstName:{reader.GetValue(1)}, LastName:{reader.GetValue(2)}");
+            }
+            reader.Close();
+        }
+
     }
 }
