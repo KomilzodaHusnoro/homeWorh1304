@@ -69,10 +69,21 @@ namespace msql
             {
                System.Console.WriteLine($"Updated Person with {inputId} Id!"); 
             }else{
-                System.Console.WriteLine("Такого Id не существует в базе данных!");
+                System.Console.WriteLine($"There is no ID like {inputId}!!");
             }
         }
-        
+        public void DeleteId (int deleteId)
+        {
+            string deleteIdCommand = string.Format($"delete Person where Id = {deleteId}");
+            SqlCommand command = new SqlCommand(deleteIdCommand, con);
+            var result = command.ExecuteNonQuery();
+            if(result > 0)
+            {
+               System.Console.WriteLine($"ID {deleteId} was deleted"); 
+            }else{
+                System.Console.WriteLine($"There is no {deleteId} ID!");
+            }
+        }
 
     }
 }

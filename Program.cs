@@ -11,7 +11,8 @@ namespace msql
          PersonDB editor = new PersonDB();
          editor.CheckingConnection();
          editor.OpenConnecting();
-         System.Console.WriteLine("Push *1* --> to add information \nPush *2* --> to see db \nPush *3* --> to select by ID\nPush *4* --> to update ID \nYour choise:");
+         start:
+         System.Console.WriteLine("Push *1* --> to add information \nPush *2* --> to see db \nPush *3* --> to select by ID\nPush *4* --> to update ID\nPush *5* --> to delete ID \nYour choise:");
          int choise = int.Parse(Console.ReadLine());
          switch (choise)
          {
@@ -49,6 +50,21 @@ namespace msql
              System.Console.WriteLine("Enter new date of birth: ");
              string dateOfBirth2 = Console.ReadLine();
              editor.UpdateById(inputId, lastName2, firstName2, middleName2, dateOfBirth2);
+             break;
+             case 5:
+                System.Console.WriteLine("Enter ID you want to delete: ");
+                int deleteId = int.Parse(Console.ReadLine());
+                System.Console.WriteLine("Are you sure? This ID and all infotmation will be deleted!");
+                string choise3 = Console.ReadLine().ToLower();
+                switch (choise3)
+                {
+                    case "yes":
+                    editor.DeleteId(deleteId);
+                    break;
+                    case "no":
+                    goto start;
+                }
+
              break;
          }
          editor.CloseConnecting();
