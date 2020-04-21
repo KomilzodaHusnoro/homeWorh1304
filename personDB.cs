@@ -35,7 +35,7 @@ namespace msql
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                System.Console.WriteLine($"ID:{reader.GetValue(0)}\nLast Name:{reader.GetValue(1)}\nFirst Name:{reader.GetValue(2)}\nMiddle Name:{reader.GetValue(3)}");
+                System.Console.WriteLine($"ID:{reader.GetValue(0)}\nLast Name:{reader.GetValue(1)}\nFirst Name:{reader.GetValue(2)}\nMiddle Name:{reader.GetValue(3)}\nBirth Date:{reader.GetValue(4)}");
             } 
         }
         public void Insert (string lastName, string firstName, string middleName, string dateOfBirth)
